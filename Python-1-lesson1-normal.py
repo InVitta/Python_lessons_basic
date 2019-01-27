@@ -18,8 +18,12 @@ else:
     print ('введённое число неверное')
     x = float(input('Введите число больше 0, но менее 10: '))
 
-# Не понял как задать цикличность при неверном числе, программа только дважды спрашивает ввод
-# В теории не нашёл, не понимаю всей логики.
+Решение:
+x = int(input('Input a number: '))
+while (x < 0 or x > 10):
+print('The number incorrect. Valid range is 0 < x < 10.')
+x = int(input('Input a number: '))
+print(x ** 2)
 
 
 
